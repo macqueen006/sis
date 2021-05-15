@@ -1,0 +1,158 @@
+.panel-settings {
+    left: 0;
+    top: 0;
+    box-shadow: var(--el-box-shadow);
+    transform: translateX(-100%);
+    z-index: 9999;
+}
+
+.panel-settings::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-top-right-radius: var(--el-border-radius);
+    border-bottom-right-radius: var(--el-border-radius);
+    z-index: 1;
+}
+
+.panel-settings .panel-settings-heading {
+    margin-bottom: 1.5rem;
+}
+
+.panel-settings .side-scroll {
+    position: relative;
+    z-index: 2;
+    padding: 1.5rem;
+}
+
+.panel-settings .form-field-ps-row {
+    display: flex;
+    align-items: center;
+}
+
+.panel-settings .form-field-ps-row label {
+    margin-left: 1rem;
+}
+
+.panel-settings .form-field {
+    margin-bottom: 1rem;
+}
+
+.panel-settings .form-field label {
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.panel-settings .form-field label small {
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.panel-settings .form-field input {
+    height: 30px;
+}
+
+.panel-settings .form-field.form-field-min-margin {
+    margin-bottom: 0.5rem;
+}
+
+.panel-settings.open {
+    transform: none;
+}
+
+.panel-settings.open .panel-settings-btn .material-icons:nth-child(1) {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+}
+
+.panel-settings.open .panel-settings-btn .material-icons:nth-child(2) {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.form-field-ps-wide .minicolors-theme-default.minicolors {
+    display: block;
+    width: 100%;
+}
+
+.form-field-ps-wide .minicolors-theme-default.minicolors input {
+    width: 100%;
+}
+
+.minicolors-theme-default.minicolors-position-right .minicolors-input {
+    padding-left: 6px;
+}
+
+.panel-settings-btn {
+    position: absolute;
+    top: 14rem;
+    left: 100%;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+    box-shadow: var(--el-box-shadow);
+    border-top-right-radius: var(--el-border-radius-min);
+    border-bottom-right-radius: var(--el-border-radius-min);
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.panel-settings-btn:hover {
+    color: var(--main-color);
+}
+
+.panel-settings-btn .material-icons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+}
+
+.panel-settings-btn .material-icons:nth-child(1) {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.panel-settings-btn .material-icons:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+}
+
+.form-field-ps-slider {
+    position: relative;
+}
+
+@media only screen and (max-width: 767.98px), only screen and (min-width: 567px) and (max-width: 900px) and (orientation: landscape) {
+    .panel-settings-btn {
+        top: 7rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .panel-settings-btn .material-icons {
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .panel-settings {
+        width: 290px;
+    }
+
+    .panel-settings .side-scroll {
+        padding: 1.5rem 1rem;
+    }
+}
