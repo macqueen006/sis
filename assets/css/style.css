@@ -220,6 +220,11 @@ code {
     margin-left: -0.625rem;
 }
 
+.center {
+    align-items: center;
+}
+
+
 .gutters-default > .col,
   .gutters-default > [class*="col-"] {
     padding-right: 0.625rem;
