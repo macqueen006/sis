@@ -6997,6 +6997,9 @@ body.mob-main-mnu-open .mob-main-mnu {
     .page-404 > svg {
         height: 100%;
     }
+    .intro-btns {
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 370px) {
