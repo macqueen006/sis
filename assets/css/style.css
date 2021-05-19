@@ -755,6 +755,13 @@ blockquote footer {
     background-color: var(--primary-bg-color);
 }
 
+.consultation-bread-crumbs {
+    position: relative;
+    padding: 1.125rem 0;
+    background-color: var(--primary-bg-color);
+    padding: 2rem 0;
+}
+
 .bread-crumbs-list {
     position: relative;
     list-style: none;
@@ -2448,6 +2455,17 @@ only screen and (min-width: 567px) and (max-width: 900px) and (orientation: land
         opacity: 0.7;
         z-index: 2;
     }
+
+    .consultation-bread-crumbs .row {
+        flex-direction: column;
+    }
+
+    .consultation-bread-crumbs .row>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
 }
 
 @media only screen and (min-width: 567px) and (max-width: 900px) and (orientation: landscape) {
